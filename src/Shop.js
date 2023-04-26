@@ -1,10 +1,10 @@
 import React from "react";
+import NavBar from "./NavBar";
 
-export default function Shop() {
+export default function Shop(props) {
     return(
         <div className="shop">
-            <h1>Shop</h1>
-            <a href="/#">Main</a>
+            <NavBar cartFull={props.cartFull}/>
         </div>
     )
 }

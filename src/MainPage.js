@@ -1,10 +1,11 @@
 import React from "react";
+import NavBar from "./NavBar";
 
-export default function MainPage() {
+export default function MainPage(props) {
+    
     return (
         <div className="main-page">
-            <h1>Main Page</h1>
-            <a href="/#/shop">Shop</a>
+            <NavBar cartFull={props.cartFull}/>
         </div>
     )
 }

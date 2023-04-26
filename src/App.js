@@ -1,10 +1,12 @@
-import React from "react";
+import React, { useState } from "react";
 import RouteSwitch from "./RouteSwitch";
 
 function App() {
+  const [cartFull, setCartFull] = useState(false);
+
   return (
     <div className="app">
-      <RouteSwitch />
+      <RouteSwitch cartFull={cartFull}/>
     </div>
   );
 }
