@@ -4,7 +4,7 @@ import Product from "./Product";
 
 export default function Shop(props) {
     const productCards = products.map(item => [
-        <Product item={item} key={item.id}/>
+        <Product item={item} setCart={props.setCart} key={item.id}/>
     ])
     return(
         <div className="shop">

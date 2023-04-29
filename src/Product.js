@@ -3,6 +3,7 @@ import React, { useState } from "react";
 export default function Product(props) {
     const item = props.item;
     const [count, setCount] = useState(0);
+    const setCart = props.setCart;
 
     function handleClick(e) {
         e.preventDefault();
@@ -14,8 +15,13 @@ export default function Product(props) {
     }
 
     function addToCart(e) {
-        console.log(e);
+        e.preventDefault();
+        setCart(prevCart => [
+            ...prevCart,
+            item.prod_name
+        ])
     }
+
     return (
         <div className="product-card">
             <img src={item.img} alt={item.prod_name} className="item-img" />

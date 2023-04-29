@@ -7,8 +7,8 @@ export default function RouteSwitch(props) {
     return (
         <HashRouter>
             <Routes>
-                <Route path="/" element={<MainPage cartFull={props.cartFull}/>} />
-                <Route path="/shop" element={<Shop cartFull={props.cartFull}/>} />
+                <Route path="/" element={<MainPage />} />
+                <Route path="/shop" element={<Shop setCart={props.setCart}/>} />
             </Routes>
         </HashRouter>
     )
