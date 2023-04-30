@@ -7,14 +7,14 @@ const products = [
         id: 1,
         prod_name: 'half dozen cookies',
         thc_total: `${6 * 30} mg THC`,
-        price: 25.00,
+        price: 30.00,
         img: sixcookies
     },
     {
         id: 2,
         prod_name: 'one dozen cookies',
         thc_total: `${12 * 30} mg THC`,
-        price: 45.00,
+        price: 50.00,
         img: twelvecookies
     },
     {

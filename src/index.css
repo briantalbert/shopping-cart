@@ -62,6 +62,7 @@ li a:hover {
 
 .cart-div {
   position: relative;
+  cursor: pointer;
 }
 
 .full-cart-dot {
@@ -101,15 +102,7 @@ li a:hover {
   justify-self: center;
 }
 
-.main-page {
-  position: relative;
-  display: flex;
-  flex-direction: column;
-  top: 5px;
-  color: var(--color-200);
-  background-color: var(--color-800);
-  height: 100vh;
-}
+
 
 .main-title {
   position: relative;
@@ -130,7 +123,8 @@ li a:hover {
   position: absolute;
   opacity: 0.3;
   left: 80%;
-  z-index: 8;
+  z-index: 1;
+  pointer-events: none; 
 }
 
 .highlights {
@@ -152,11 +146,26 @@ li a:hover {
 }
 
 .shop {
+  display: flex;
+  justify-content: center;
   position: relative;
   top: 5px;
   color: var(--color-200);
   background-color: var(--color-800);
   height: 100vh;
+  padding: 10px;
+}
+
+
+.main-page {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  top: 5px;
+  color: var(--color-200);
+  background-color: var(--color-800);
+  height: 100vh;
+  padding: 10px;
 }
 
 .product-card {
@@ -170,12 +179,6 @@ li a:hover {
   width: 200px;
   height: auto;
   border-radius: 10px;
-}
-
-.shop {
-  display: flex;
-  justify-content: center;
-  padding: 10px;
 }
 
 .cards {
@@ -195,3 +198,14 @@ li a:hover {
   width: 60%;
 }
 
+.view-cart {
+  position: absolute;
+  top: 72px;
+  right: 0;
+  width: 300px;
+  height: 450px;
+  margin: auto;
+  background-color: var(--color-100);
+  color: var(--color-800);
+  z-index: 8;
+}

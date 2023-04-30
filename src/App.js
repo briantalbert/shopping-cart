@@ -17,7 +17,7 @@ function App() {
 
   return (
     <div className="app">
-      <NavBar cartFull={cartFull}/>
+      <NavBar cartFull={cartFull} cart={cart}/>
       <RouteSwitch setCart={setCart}/>
     </div>
   );

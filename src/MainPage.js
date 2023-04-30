@@ -1,6 +1,5 @@
 import React from "react";
-import leaf from "./cannabis-large.png"
-
+import Watermark from "./Watermark";
 export default function MainPage(props) {
     
     return (
@@ -25,7 +24,7 @@ export default function MainPage(props) {
                 </ul>
             </div><br />
             <span className="browse-shop">browse our <a href="/#/shop">shop</a> to check out available products!</span>
-            <img src={leaf} className="watermark" />
+            <Watermark />
         </div>
     )
 }

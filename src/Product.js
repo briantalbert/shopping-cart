@@ -18,7 +18,11 @@ export default function Product(props) {
         e.preventDefault();
         setCart(prevCart => [
             ...prevCart,
-            item.prod_name
+            {
+                id: item.id,
+                prod_name: item.prod_name,
+                qty: count
+            }
         ])
     }
 
