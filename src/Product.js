@@ -2,8 +2,12 @@ import React, { useState } from "react";
 
 export default function Product(props) {
     const item = props.item;
-    const [count, setCount] = useState(0);
     const setCart = props.setCart;
+    const cart = props.cart;
+    const [inCart, setInCart] = useState(false);
+    const [count, setCount] = useState(0);
+    
+
 
     function handleClick(e) {
         e.preventDefault();
@@ -16,14 +20,23 @@ export default function Product(props) {
 
     function addToCart(e) {
         e.preventDefault();
+
+        if (inCart) {
+            //if in the cart, remove it. next steps will update count,
+            //or just replace it if count is the same.
+            cart.splice(cart.findIndex(x => x.id == item.id), 1);
+        }
+
+        const cartItem = {
+            ...item,
+            qty: count
+        }
+
         setCart(prevCart => [
             ...prevCart,
-            {
-                id: item.id,
-                prod_name: item.prod_name,
-                qty: count
-            }
+            cartItem
         ])
+        setInCart(true);
     }
 
     return (

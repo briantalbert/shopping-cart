@@ -50,6 +50,10 @@ li a {
   text-decoration: none;
 }
 
+a {
+  text-decoration: none;
+}
+
 li a:hover {
   text-decoration: underline;
 }
@@ -102,8 +106,6 @@ li a:hover {
   justify-self: center;
 }
 
-
-
 .main-title {
   position: relative;
   top: 5px;
@@ -131,8 +133,12 @@ li a:hover {
   margin: 10px;
 }
 
+.highlights ul {
+  width: 450px;
+}
+
 .highlights li {
-	margin: 0;
+	margin: 5px 0 5px 0;
 	padding: 0 0 0 20px;
 	list-style: none;
 	background-image: url('./cannabis.png');
@@ -208,4 +214,50 @@ li a:hover {
   background-color: var(--color-100);
   color: var(--color-800);
   z-index: 8;
+}
+
+.view-cart-item {
+  display: flex;
+  flex-direction: row;
+  margin: 5px;
+  align-items: center;
+}
+
+.item-total-cost {
+  position: absolute;
+  right: 0;
+  margin: 3px;
+}
+
+.view-cart-img {
+  height: 50px;
+  width: auto;
+  border-radius: 5px;
+}
+
+.final-total {
+  position: absolute;
+  right: 0;
+  margin: 3px;
+}
+
+.view-cart-prodname {
+  max-width: 175px;
+}
+
+.checkout-btn {
+  background-color: var(--color-700);
+  color: var(--color-200);
+  margin: 7px;
+  border: none;
+  border-radius: 5px;
+}
+
+.disclaimer {
+  position: relative;
+  top: 20px;
+  font-size: small;
+  width: 420px;
+  padding: 5px;
+  border: 1px dashed var(--color-200);
 }

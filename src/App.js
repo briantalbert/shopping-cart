@@ -12,13 +12,12 @@ function App() {
     } else if (cart.length == 0) {
       setCartFull(false);
     };
-    console.log(cart);
   }, [cart])
 
   return (
     <div className="app">
       <NavBar cartFull={cartFull} cart={cart}/>
-      <RouteSwitch setCart={setCart}/>
+      <RouteSwitch cart={cart} setCart={setCart}/>
     </div>
   );
 }

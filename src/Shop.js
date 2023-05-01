@@ -5,7 +5,7 @@ import Watermark from "./Watermark";
 
 export default function Shop(props) {
     const productCards = products.map(item => [
-        <Product item={item} setCart={props.setCart} key={item.id}/>
+        <Product item={item} cart={props.cart} setCart={props.setCart} key={item.id}/>
     ])
     return(
         <div className="shop">

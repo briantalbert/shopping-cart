@@ -21,10 +21,16 @@ export default function MainPage(props) {
                     <li>made with refined coconut oil, rather than butter</li>
                     <li>able to be made vegan by request</li>
                     <li>meticulously weighed and measured for accurate, consistent dosing</li>
+                    <li>made by default without chocolate chips, for higher consistency and accuracy in dosing</li>
                 </ul>
             </div><br />
             <span className="browse-shop">browse our <a href="/#/shop">shop</a> to check out available products!</span>
             <Watermark />
+            
+            <span className="disclaimer">this page was made as a learning excercise only. no 
+            illegal substances are actually for sale. if you really want i will sell you 
+            some chocolate chips, but no cannabis infused edibles of any kind are available 
+            for sale. the checkout button doesn't even work.</span>
         </div>
     )
 }

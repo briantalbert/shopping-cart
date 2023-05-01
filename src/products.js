@@ -1,6 +1,7 @@
 import sixcookies from "./sixcookies.jpg";
 import twelvecookies from "./twelvecookies.jpg";
 import chocchips from "./chocchips.jpg";
+import oil from "./coconutoil.jpg"
 
 const products = [
     {
@@ -23,6 +24,13 @@ const products = [
         thc_total: 'no THC content',
         price: 1.00,
         img: chocchips
+    },
+    {
+        id: 4,
+        prod_name: '1 cup infused coconut oil',
+        thc_total: '~1200 mg THC',
+        price: 150.00,
+        img: oil
     }
 ]
 
