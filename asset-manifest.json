@@ -1,0 +1,18 @@
+{
+  "files": {
+    "main.css": "/shopping-cart/static/css/main.121ff36b.css",
+    "main.js": "/shopping-cart/static/js/main.b9ad90e2.js",
+    "static/media/sixcookies.jpg": "/shopping-cart/static/media/sixcookies.d00a4d4a0d278527cfb7.jpg",
+    "static/media/coconutoil.jpg": "/shopping-cart/static/media/coconutoil.6efff7b3c2e5bf4a7012.jpg",
+    "static/media/twelvecookies.jpg": "/shopping-cart/static/media/twelvecookies.56a3bc8d6d3897d0fe77.jpg",
+    "static/media/cannabis-large.png": "/shopping-cart/static/media/cannabis-large.5cdaac870e4d2e5c193b.png",
+    "static/media/chocchips.jpg": "/shopping-cart/static/media/chocchips.923521d1fb9acda14497.jpg",
+    "index.html": "/shopping-cart/index.html",
+    "main.121ff36b.css.map": "/shopping-cart/static/css/main.121ff36b.css.map",
+    "main.b9ad90e2.js.map": "/shopping-cart/static/js/main.b9ad90e2.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.121ff36b.css",
+    "static/js/main.b9ad90e2.js"
+  ]
+}
